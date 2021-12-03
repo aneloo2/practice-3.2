@@ -75,9 +75,6 @@ button a {
 	color: white;
 }
 
-button a:hover {
-	color: yellow;
-}
 
 .cv__about_box3_massmed {
 	margin-left: 260px;
@@ -87,4 +84,34 @@ button a:hover {
 a {
  	display: block;
 	margin-top: 5px;
+}
+.btn {
+	position: relative;
+	padding: 10px 30px;
+	border: 2px solid black;
+	margin-top: 10px;
+	text-decoration: none;
+	color: black;
+	transform: 0.5s;
+	overflow: hidden;
+
+}
+.btn:hover {
+	color: #ffc107;
+}
+
+.btn span {
+	position: absolute;
+	display: block;
+	width: 0px;
+	height: 0px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: black;
+	transition: width 0.5s, height 0.5s;
+	z-index: -1;}
+
+.btn:hover span {
+	width: 300px;
+	height: 300px;
 }
